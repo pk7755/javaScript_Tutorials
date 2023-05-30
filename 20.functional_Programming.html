@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     Functional Programming
+</body>
+<script>
+     function calculator (task,a,b){
+          return task(a,b);
+     }
+     let sum=(a,b)=> a+b;
+     let sub=(a,b)=> a-b;
+     let mul=(a,b)=> a*b;
+     let div=(a,b)=> a/b;
+
+     let a = calculator(sum,20,34);
+     console.log(a);
+</script>
+</html>

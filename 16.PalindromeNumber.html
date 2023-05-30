@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     
+</body>
+<script>
+function Palindrom(a){
+     var temp=a;
+     var rev=0;
+     while(a>0){
+          var rem=parseInt(a%10);
+          var rev=rev*10+rem;
+          a=parseInt(a/10);
+     }
+     if(temp==rev){
+          console.log("Palindrome Number");
+     }
+     else{
+          console.log("Not palindrom Number");
+     }
+}
+var x=prompt("Enter the number : ");
+x=Number(x);
+Palindrom(x);
+</script>
+</html>

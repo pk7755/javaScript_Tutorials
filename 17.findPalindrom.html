@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+     function findPalindrom(min_range, max_range) {
+          var count = 0;
+          for (var i = min_range; i <= max_range; i++) {
+               a = i;
+               var temp = a;
+               var rev = 0;
+
+               while (a > 0) {
+                    var rem = (a % 10);
+                    var rev = rev * 10 + rem;
+
+                    // Math.floor(12.1)=> 12
+                    // Math.ceil(12.1)=> 13
+                    // parseInt(12.1)=> 12
+                    // Math.pow(2,5)=> 32
+                    
+                    a = parseInt(a/10);
+               }
+               if (temp == rev) {
+                    console.log("Palindrome Number is: ", temp);
+                    count++;
+               }
+          }
+          console.log(`The Total Number of Palindrome Number between ${min_range} to ${max_range} is : ${count}`);
+     }
+     let min_range = +prompt("Enter the min_range:")
+     let max_range = +prompt("Enter the max_range:")
+
+     findPalindrom(min_range, max_range);
+</script>
+
+</html>
